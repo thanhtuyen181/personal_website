@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;     
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    padding-right: 50px;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 35px;
+    transition: 0.5s;
+}
+
+.navbar a:hover {
+    color: #0ef;
+}
+
+.typing-text {
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    border-right: 3px solid #f8f8f8; /* cursor */
+    width: 0;
+    animation: typing 8s steps(26) infinite, blink 0.7s infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 26ch; /* number of characters */
+    }
+    70% {
+        width: 26ch;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+/* cursor blink */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+section {
+    min-height: 100vh;
+    padding: 100px 10% 50px;
+}
+
+.home {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.home-img img {
+    width: 450px;
+    border-radius: 50%;
+    box-shadow: 0 20px 50px rgba(255, 250, 250, 0.3);
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+
+.home-content h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+}
+
+.home-content h1 span {
+    color: #0ef;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about, .education, .contact {
+    background: #f4f4f4;
+}
+
+h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+h2 {
+    font-size: 25px;
+    color: #3e3e3e
+}
+.skills {
+    margin-top: 40px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.technical-skills p, .languages p, .soft-skills p {
+    padding: 10px 18px;
+    border: 2px solid #656565;   /* border around each skill */
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.technical-skills {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.languages {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.soft-skills {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.education {
+    display: flex;
+    gap: 60px;
+}
+
+.education p {
+    margin-bottom: 0px;
+}
+
+.my-education-content h2, 
+.my-education-content p {
+    margin-top: 15px;
+}
+
+/* Make both columns balanced */
+.my-education,
+.relevant-courseworks {
+    flex: 1;
+}
+
+
+.relevant-courseworks p {
+    padding: 10px 16px;
+    border: 1.5px solid #333;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 8px 8px 10px 0;
+    font-size: 16px;
+}
+
+.projects h1 {
+    margin-bottom: 50px;
+}
+
+.projects-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.projects-img > div {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projects-img h2 {
+    margin: 20px;
+}
+
+.projects-img p {
+    margin: 0 20px 25px;
+    line-height: 1.5;
+}
+
+.projects-img > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 40px;
+    color: #667eea;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #764ba2;
+    transform: scale(1.2);
+}
