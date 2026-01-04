@@ -346,7 +346,7 @@ h2 {
     }
 
     .projects {
-        padding-left: 40px;
+        padding: auto;
     }
 
     h1, .home-content h1 {
