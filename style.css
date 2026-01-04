@@ -298,7 +298,7 @@ h2 {
     transform: scale(1.2);
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1480px) {
     header {
         padding: 15px 6%;
     }
