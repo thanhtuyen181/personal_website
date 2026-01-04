@@ -131,6 +131,8 @@ section:not(.contact) {
 .about {
     display: flex;
     justify-content: space-between;
+    text-align: justify;
+    gap: 80px;
 }
 
 .about img {
@@ -338,9 +340,13 @@ h2 {
     }
 
     section:not(.contact) {
-        min-height: 70vh;
+        min-height: 80vh;
         padding: 50px 70px 50px 70px;
        
+    }
+
+    .projects {
+        padding-left: 40px;
     }
 
     h1, .home-content h1 {
@@ -348,7 +354,7 @@ h2 {
     }
 
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     h2 {
@@ -383,7 +389,8 @@ h2 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
+        text-align: justify;
     }
 
     .about img {
