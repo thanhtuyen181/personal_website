@@ -340,7 +340,7 @@ h2 {
     }
 
     section:not(.contact) {
-        min-height: 80vh;
+        min-height: 100vh;
         padding: 50px 70px 50px 70px;
        
     }
