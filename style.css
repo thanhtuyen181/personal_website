@@ -80,7 +80,7 @@ header {
 
 section:not(.contact) {
     min-height: 100vh;
-    padding: 150px 10% 60px;
+    padding: 150px 10% 70px;
 }
 
 
@@ -247,6 +247,7 @@ h2 {
 
 .projects-img > div {
     background: white;
+    margin-bottom: 15px;
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
