@@ -299,6 +299,7 @@ h2 {
     transform: scale(1.2);
 }
 
+/*Add responsive for laptop*/
 @media (max-width: 1480px) {
     header {
         padding: 15px 6%;
@@ -324,4 +325,40 @@ h2 {
     .home-img img {
         width: 320px;
     }
+}
+
+/*Add responsive for phones*/
+@media (max-width: 400px) {
+    header {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .home-img img {
+        width: 180px;
+    }
+
+    .technical-skills p, .languages p, .soft-skills p
+    , .relevant-courseworks p {
+        padding: 8px 14px;
+        border: 2px solid #656565;   /* border around each skill */
+        border-radius: 25px;
+        font-size: 12px;
+    }
+
 }
