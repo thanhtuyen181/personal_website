@@ -328,7 +328,7 @@ h2 {
 }
 
 /*Add responsive for phones*/
-@media (max-width: 768px) {
+@media (max-width: 1190px) {
     header {
         display: none;
     }
